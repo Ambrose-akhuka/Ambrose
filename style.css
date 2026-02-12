@@ -355,7 +355,7 @@ body.dark .social-icons i {
  .image {
     margin-top: 10%;
     width: 500px;
-    height: 700px;
+    height: 500px;
     border-radius: 40% 40% 40% 40%;
     overflow: hidden;
     animation: imgFloat 5s ease-in-out infinite;
@@ -908,4 +908,5 @@ footer{
         margin-left: 50%;
     }
 }
+
 
