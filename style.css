@@ -370,7 +370,22 @@ body.dark .social-icons i {
     object-fit: cover;
     display:block;
  }
+/* This code only runs on screens smaller than 768px (Mobile/Tablets) */
+@media (max-width: 768px) {
+  .image {
+    width: 300px !important;   /* Makes the container smaller for phone screens */
+    height: 300px !important;  /* Keeps it a square shape */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .image img {
+    width: 100% !important;    /* Forces the image to stay inside the container */
+    height: auto !important;   /* Prevents the image from stretching */
+    object-position: top;      /* Ensures your head is visible */
+  }
+}
  @keyframes imgFloat {
     50%{
         transform: translateY(50px);
@@ -912,6 +927,7 @@ footer{
         margin-left: 50%;
     }
 }
+
 
 
 
